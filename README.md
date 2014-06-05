@@ -24,8 +24,11 @@ By default the button is a circle, but you can change it to be a square (or half
 You can set the direction in which the DKAExpandingMenu expands. Set `self.expandingMenu.direction` to one of the following:
 
 `DKAExpandingMenuDirectionUp`
+
 `DKAExpandingMenuDirectionRight`
+
 `DKAExpandingMenuDirectionDown`
+
 `DKAExpandingMenuDirectionLeft`
 
 The default is down.
@@ -33,8 +36,11 @@ The default is down.
 There is also a delegate protocol which you can implement if you want to be notified when the DKAExpandingMenu expands and contracts.
 
 `(void) expandingMenuWillExpand:(DKAExpandingMenu *)expandingMenu;`
+
 `(void) expandingMenuDidExpand:(DKAExpandingMenu *)expandingMenu;`
+
 `(void) expandingMenuWillContract:(DKAExpandingMenu *)expandingMenu;`
+
 `(void) expandingMenuDidContract:(DKAExpandingMenu *)expandingMenu;`
 
 ## Requirements
