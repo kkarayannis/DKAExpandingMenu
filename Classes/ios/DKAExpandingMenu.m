@@ -132,12 +132,12 @@ float MARGIN_PERC = 0.0;
         self.middleBorders.transform = CGAffineTransformConcat(s, offsetT);
         self.button.alpha = 0;
     } completion:^(BOOL fin){
-        for (UIButton* button in self.buttons){
-            self.button.hidden = YES;
-            button.alpha = 0;
-            button.hidden = NO;
+        self.button.hidden = YES;
+        for (UIView* view in self.buttons){
+            view.alpha = 0;
+            view.hidden = NO;
             [UIView animateWithDuration:0.15 animations:^{
-                button.alpha = 1;
+                view.alpha = 1;
             } completion:^(BOOL fin){
                 [self.delegate expandingMenuDidExpand:self];
             }];
@@ -155,8 +155,8 @@ float MARGIN_PERC = 0.0;
     float animationTime = 0.15;
     
     [UIView animateWithDuration:animationTime animations:^{
-        for (UIButton* button in self.buttons){
-            button.alpha = 0;
+        for (UIView* view in self.buttons){
+            view.alpha = 0;
         }
     } completion:^(BOOL fin){
         self.button.hidden = NO;
