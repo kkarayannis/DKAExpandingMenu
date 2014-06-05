@@ -1,14 +1,13 @@
 # DKAExpandingMenu
 
-[![Version](https://img.shields.io/cocoapods/v/DKAExpandingMenu.svg?style=flat)](http://cocoadocs.org/docsets/DKAExpandingMenu)
-[![License](https://img.shields.io/cocoapods/l/DKAExpandingMenu.svg?style=flat)](http://cocoadocs.org/docsets/DKAExpandingMenu)
-[![Platform](https://img.shields.io/cocoapods/p/DKAExpandingMenu.svg?style=flat)](http://cocoadocs.org/docsets/DKAExpandingMenu)
+## Screenshot
 
-## Usage
+<img src="https://raw.githubusercontent.com/kkarayannis/DKAExpandingMenu/master/Assets/demo1.gif"/>
 
-To run the example project; clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+Requires iOS 7 and ARC
 
 ## Installation
 
