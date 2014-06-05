@@ -1,0 +1,14 @@
+PODS:
+  - DKAExpandingMenu (1.0.0)
+
+DEPENDENCIES:
+  - DKAExpandingMenu (from `../`)
+
+EXTERNAL SOURCES:
+  DKAExpandingMenu:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DKAExpandingMenu: 1cf359d620379b64849cba72c0928fbac9b86653
+
+COCOAPODS: 0.32.1

@@ -19,7 +19,7 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-Kostas Karayannis, kkarayannis@gmail.com
+Konstadinos Karayannis, @kkarayannis
 
 ## License
 
