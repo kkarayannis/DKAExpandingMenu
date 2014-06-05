@@ -192,7 +192,7 @@ CGRect originalFrame;
 
 -(void) awakeFromNib{
     [self setTintColor:self.tintColor];
-//    self.clipsToBounds = YES;
+    self.direction = DKAExpandingMenuDirectionDown;
 }
 
 -(void) initializeButton{
