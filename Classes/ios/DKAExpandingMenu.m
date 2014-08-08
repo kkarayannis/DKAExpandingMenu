@@ -112,7 +112,9 @@ float MARGIN_PERC = 0.0;
     if (self.expanded){
         return;
     }
-    [self.delegate expandingMenuWillExpand:self];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(expandingMenuWillExpand:)]){
+        [self.delegate expandingMenuWillExpand:self];
+    }
     originalFrame = self.frame;
     self.expanded = YES;
     
@@ -139,8 +141,10 @@ float MARGIN_PERC = 0.0;
             [UIView animateWithDuration:0.15 animations:^{
                 view.alpha = 1;
             } completion:^(BOOL fin){
-                [self.delegate expandingMenuDidExpand:self];
             }];
+        }
+        if (self.delegate && [self.delegate respondsToSelector:@selector(expandingMenuDidExpand:)]){
+            [self.delegate expandingMenuDidExpand:self];
         }
     }];
 }
@@ -149,7 +153,9 @@ float MARGIN_PERC = 0.0;
     if (!self.expanded){
         return;
     }
-    [self.delegate expandingMenuWillContract:self];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(expandingMenuWillContract:)]){
+        [self.delegate expandingMenuWillContract:self];
+    }
     self.expanded = NO;
     
     float animationTime = 0.15;
@@ -168,7 +174,9 @@ float MARGIN_PERC = 0.0;
         } completion:^(BOOL fin){
             [self.superview sendSubviewToBack:self];
             self.frame = originalFrame;
-            [self.delegate expandingMenuDidContract:self];
+            if (self.delegate && [self.delegate respondsToSelector:@selector(expandingMenuDidContract:)]){
+                [self.delegate expandingMenuDidContract:self];
+            }
         }];
     }];
 }

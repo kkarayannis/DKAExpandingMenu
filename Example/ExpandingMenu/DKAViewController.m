@@ -26,7 +26,7 @@
 #import "DKAViewController.h"
 
 
-@interface DKAViewController ()
+@interface DKAViewController () <DKAExpandingMenuDelegate>
 
 @property (weak, nonatomic) IBOutlet DKAExpandingMenu *expandingMenu;
 
@@ -65,6 +65,7 @@
     [button4 addTarget:self action:@selector(button4Action) forControlEvents:UIControlEventTouchUpInside];
     
     self.expandingMenu.buttons = @[button1, button2, button3, button4];
+    self.expandingMenu.delegate = self;
 }
 
 -(void) button1Action{
@@ -81,6 +82,22 @@
 
 -(void) button4Action{
     NSLog(@"4");
+}
+
+-(void) expandingMenuWillExpand:(DKAExpandingMenu *)expandingMenu{
+    NSLog(@"Will Expand");
+}
+
+-(void) expandingMenuDidExpand:(DKAExpandingMenu *)expandingMenu{
+    NSLog(@"Did Expand");
+}
+
+-(void) expandingMenuWillContract:(DKAExpandingMenu *)expandingMenu{
+    NSLog(@"Will Contract");
+}
+
+-(void) expandingMenuDidContract:(DKAExpandingMenu *)expandingMenu{
+    NSLog(@"Did Contract");
 }
 
 - (IBAction)tapOnWhitespaceAction:(UITapGestureRecognizer *)sender {
