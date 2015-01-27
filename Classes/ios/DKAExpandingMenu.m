@@ -37,6 +37,31 @@
 
 @implementation DKAExpandingMenu
 
+-(instancetype)init
+{
+    self = [super init];
+    if (self)
+    {
+        [self sharedInit];
+    }
+    return self;
+}
+
+-(instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self)
+    {
+        [self sharedInit];
+    }
+    return self;
+}
+
+-(void) sharedInit
+{
+    self.sendToBackOnContract = YES;
+}
+
 float MARGIN_PERC = 0.0;
 
 -(void) setDirection:(DKAExpandingMenuDirection)direction{
@@ -172,7 +197,10 @@ float MARGIN_PERC = 0.0;
             self.bottomBorder.transform = CGAffineTransformIdentity;
             self.middleBorders.transform = CGAffineTransformIdentity;
         } completion:^(BOOL fin){
-            [self.superview sendSubviewToBack:self];
+            if (self.sendToBackOnContract)
+            {
+                [self.superview sendSubviewToBack:self];
+            }
             self.frame = originalFrame;
             if (self.delegate && [self.delegate respondsToSelector:@selector(expandingMenuDidContract:)]){
                 [self.delegate expandingMenuDidContract:self];

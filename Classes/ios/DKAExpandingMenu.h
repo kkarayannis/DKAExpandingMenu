@@ -33,6 +33,10 @@ typedef NS_ENUM(NSInteger, DKAExpandingMenuDirection){
     DKAExpandingMenuDirectionLeft
 };
 
+#ifndef IBInspectable // prevent compile issues with older SDKS
+#define IBInspectable
+#endif
+
 @protocol DKAExpandingMenuDelegate;
 
 @interface DKAExpandingMenu : UIView
@@ -44,6 +48,7 @@ typedef NS_ENUM(NSInteger, DKAExpandingMenuDirection){
 @property (strong, nonatomic) UIView<DKABorderEnd>* topBorder;
 @property (strong, nonatomic) UIView<DKABorderEnd>* bottomBorder;
 @property (strong, nonatomic) UIButton* button;
+@property (readwrite) IBInspectable BOOL sendToBackOnContract;
 
 -(void) expand;
 -(void) contract;
