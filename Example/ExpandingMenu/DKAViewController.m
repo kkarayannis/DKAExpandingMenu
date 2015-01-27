@@ -84,12 +84,22 @@
     NSLog(@"4");
 }
 
+-(BOOL) expandingMenuShouldExpand:(DKAExpandingMenu *)expandingMenu {
+    NSLog(@"Should Expand");
+    return YES;
+}
+
 -(void) expandingMenuWillExpand:(DKAExpandingMenu *)expandingMenu{
     NSLog(@"Will Expand");
 }
 
 -(void) expandingMenuDidExpand:(DKAExpandingMenu *)expandingMenu{
     NSLog(@"Did Expand");
+}
+
+-(BOOL) expandingMenuShouldContract:(DKAExpandingMenu *)expandingMenu {
+    NSLog(@"Should Contract");
+    return YES;
 }
 
 -(void) expandingMenuWillContract:(DKAExpandingMenu *)expandingMenu{
