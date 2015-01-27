@@ -74,6 +74,15 @@ float MARGIN_PERC = 0.0;
 }
 
 -(void) setButtons:(NSArray *)buttons{
+    // remove previous views, we recreate them all below
+    [self.buttons enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        if ( [obj isKindOfClass:[UIView class] ] )
+        {
+            UIView *buttonsView = obj;
+            [buttonsView removeFromSuperview];
+        }
+    }];
+    
     _buttons = buttons;
     
     CGFloat maxWidth = self.frame.size.width;
