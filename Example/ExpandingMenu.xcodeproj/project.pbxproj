@@ -17,23 +17,8 @@
 		2EA23CB319387A9D00C87904 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EA23CB119387A9D00C87904 /* Main.storyboard */; };
 		2EA23CB619387A9D00C87904 /* DKAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA23CB519387A9D00C87904 /* DKAViewController.m */; };
 		2EA23CB819387A9D00C87904 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EA23CB719387A9D00C87904 /* Images.xcassets */; };
-		2EA23CBF19387A9D00C87904 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EA23CBE19387A9D00C87904 /* XCTest.framework */; };
-		2EA23CC019387A9D00C87904 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EA23C9F19387A9D00C87904 /* Foundation.framework */; };
-		2EA23CC119387A9D00C87904 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EA23CA319387A9D00C87904 /* UIKit.framework */; };
-		2EA23CC919387A9D00C87904 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2EA23CC719387A9D00C87904 /* InfoPlist.strings */; };
-		2EA23CCB19387A9D00C87904 /* ExpandingMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA23CCA19387A9D00C87904 /* ExpandingMenuTests.m */; };
 		2EE3C051193CB37C007F57E9 /* DKADirectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE3C050193CB37C007F57E9 /* DKADirectionTableViewController.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		2EA23CC219387A9D00C87904 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2EA23C9419387A9D00C87904 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2EA23C9B19387A9D00C87904;
-			remoteInfo = ExpandingMenu;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		199411DD3B5549C9B79DCCE4 /* Pods-ExpandingMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpandingMenu.xcconfig"; path = "Pods/Pods-ExpandingMenu.xcconfig"; sourceTree = "<group>"; };
@@ -52,11 +37,7 @@
 		2EA23CB419387A9D00C87904 /* DKAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKAViewController.h; sourceTree = "<group>"; };
 		2EA23CB519387A9D00C87904 /* DKAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKAViewController.m; sourceTree = "<group>"; };
 		2EA23CB719387A9D00C87904 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2EA23CBD19387A9D00C87904 /* ExpandingMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpandingMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EA23CBE19387A9D00C87904 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		2EA23CC619387A9D00C87904 /* ExpandingMenuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExpandingMenuTests-Info.plist"; sourceTree = "<group>"; };
-		2EA23CC819387A9D00C87904 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2EA23CCA19387A9D00C87904 /* ExpandingMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpandingMenuTests.m; sourceTree = "<group>"; };
 		2EE3C04F193CB37C007F57E9 /* DKADirectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKADirectionTableViewController.h; sourceTree = "<group>"; };
 		2EE3C050193CB37C007F57E9 /* DKADirectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKADirectionTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,16 +54,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2EA23CBA19387A9D00C87904 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2EA23CBF19387A9D00C87904 /* XCTest.framework in Frameworks */,
-				2EA23CC119387A9D00C87904 /* UIKit.framework in Frameworks */,
-				2EA23CC019387A9D00C87904 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -90,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				2EA23CA519387A9D00C87904 /* ExpandingMenu */,
-				2EA23CC419387A9D00C87904 /* ExpandingMenuTests */,
 				2EA23C9E19387A9D00C87904 /* Frameworks */,
 				2EA23C9D19387A9D00C87904 /* Products */,
 				199411DD3B5549C9B79DCCE4 /* Pods-ExpandingMenu.xcconfig */,
@@ -101,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				2EA23C9C19387A9D00C87904 /* ExpandingMenu.app */,
-				2EA23CBD19387A9D00C87904 /* ExpandingMenuTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,24 +114,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2EA23CC419387A9D00C87904 /* ExpandingMenuTests */ = {
-			isa = PBXGroup;
-			children = (
-				2EA23CCA19387A9D00C87904 /* ExpandingMenuTests.m */,
-				2EA23CC519387A9D00C87904 /* Supporting Files */,
-			);
-			path = ExpandingMenuTests;
-			sourceTree = "<group>";
-		};
-		2EA23CC519387A9D00C87904 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2EA23CC619387A9D00C87904 /* ExpandingMenuTests-Info.plist */,
-				2EA23CC719387A9D00C87904 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -185,24 +136,6 @@
 			productReference = 2EA23C9C19387A9D00C87904 /* ExpandingMenu.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2EA23CBC19387A9D00C87904 /* ExpandingMenuTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2EA23CD119387A9D00C87904 /* Build configuration list for PBXNativeTarget "ExpandingMenuTests" */;
-			buildPhases = (
-				2EA23CB919387A9D00C87904 /* Sources */,
-				2EA23CBA19387A9D00C87904 /* Frameworks */,
-				2EA23CBB19387A9D00C87904 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2EA23CC319387A9D00C87904 /* PBXTargetDependency */,
-			);
-			name = ExpandingMenuTests;
-			productName = ExpandingMenuTests;
-			productReference = 2EA23CBD19387A9D00C87904 /* ExpandingMenuTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -212,11 +145,6 @@
 				CLASSPREFIX = DKA;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "DK Apps";
-				TargetAttributes = {
-					2EA23CBC19387A9D00C87904 = {
-						TestTargetID = 2EA23C9B19387A9D00C87904;
-					};
-				};
 			};
 			buildConfigurationList = 2EA23C9719387A9D00C87904 /* Build configuration list for PBXProject "ExpandingMenu" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -232,7 +160,6 @@
 			projectRoot = "";
 			targets = (
 				2EA23C9B19387A9D00C87904 /* ExpandingMenu */,
-				2EA23CBC19387A9D00C87904 /* ExpandingMenuTests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,14 +172,6 @@
 				2EA23CB819387A9D00C87904 /* Images.xcassets in Resources */,
 				2EA23CAA19387A9D00C87904 /* InfoPlist.strings in Resources */,
 				2EA23CB319387A9D00C87904 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2EA23CBB19387A9D00C87904 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2EA23CC919387A9D00C87904 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,23 +222,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2EA23CB919387A9D00C87904 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2EA23CCB19387A9D00C87904 /* ExpandingMenuTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2EA23CC319387A9D00C87904 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2EA23C9B19387A9D00C87904 /* ExpandingMenu */;
-			targetProxy = 2EA23CC219387A9D00C87904 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2EA23CA819387A9D00C87904 /* InfoPlist.strings */ = {
@@ -336,14 +239,6 @@
 				2EA23CB219387A9D00C87904 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2EA23CC719387A9D00C87904 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2EA23CC819387A9D00C87904 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -449,46 +344,6 @@
 			};
 			name = Release;
 		};
-		2EA23CD219387A9D00C87904 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ExpandingMenu.app/ExpandingMenu";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ExpandingMenu/ExpandingMenu-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ExpandingMenuTests/ExpandingMenuTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		2EA23CD319387A9D00C87904 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ExpandingMenu.app/ExpandingMenu";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ExpandingMenu/ExpandingMenu-Prefix.pch";
-				INFOPLIST_FILE = "ExpandingMenuTests/ExpandingMenuTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -506,15 +361,6 @@
 			buildConfigurations = (
 				2EA23CCF19387A9D00C87904 /* Debug */,
 				2EA23CD019387A9D00C87904 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2EA23CD119387A9D00C87904 /* Build configuration list for PBXNativeTarget "ExpandingMenuTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2EA23CD219387A9D00C87904 /* Debug */,
-				2EA23CD319387A9D00C87904 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
