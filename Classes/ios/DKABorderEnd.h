@@ -33,5 +33,7 @@ typedef NS_ENUM(NSInteger, DKABorderEndType){
 @protocol DKABorderEnd <NSObject>
 
 @property (nonatomic) DKABorderEndType type;
+@property (nonatomic) UIColor *borderColor;
+@property (nonatomic) UIColor *fillColor;
 
 @end

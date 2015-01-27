@@ -35,6 +35,8 @@
 @implementation BottomBorder
 
 @synthesize type = _type;
+@synthesize borderColor = _borderColor;
+@synthesize fillColor = _fillColor;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -43,6 +45,8 @@
         // Initialization code
         self.opaque = NO;
         self.type = DKABorderEndTypeCircle;
+        self.fillColor = [UIColor whiteColor];
+        self.borderColor = self.tintColor;
     }
     return self;
 }
@@ -66,16 +70,21 @@
     }
 }
 
+- (void)setBorderColor:(UIColor *)borderColor
+{
+    _borderColor = borderColor;
+}
 
+- (void)setFillColor:(UIColor *)fillColor
+{
+    _fillColor = fillColor;
+}
 
-
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
  - (void)drawRect:(CGRect)rect
 {
-    [[UIColor whiteColor] setFill];
+    [self.fillColor setFill];
     [self.path fill];
-    [self.tintColor setStroke];
+    [self.borderColor setStroke];
     self.path.lineWidth = 1;
     [self.path stroke];
 }

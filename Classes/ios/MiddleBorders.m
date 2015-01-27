@@ -34,7 +34,9 @@
     if (self) {
         // Initialization code
         self.opaque = NO;
-        self.backgroundColor = [UIColor whiteColor];
+        self.backgroundColor = [UIColor clearColor];
+        self.borderColor = self.tintColor;
+        self.fillColor = [UIColor whiteColor];
     }
     return self;
 }
@@ -44,27 +46,27 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
+    UIBezierPath* rectanglePath = [UIBezierPath bezierPathWithRect: CGRectMake(0.5, 0, self.frame.size.width-1, self.frame.size.height)];
+    [self.fillColor setFill];
+    [rectanglePath fill];
+    [[UIColor clearColor] setStroke];
+    rectanglePath.lineWidth = 1;
+    [rectanglePath stroke];
+ 
     UIBezierPath* bezierPath = [UIBezierPath bezierPath];
     [bezierPath moveToPoint: CGPointMake(1, 0)];
     [bezierPath addLineToPoint: CGPointMake(1, self.frame.size.height)];
-    [self.tintColor setStroke];
+    [self.borderColor setStroke];
     bezierPath.lineWidth = 1;
     [bezierPath stroke];
     
     UIBezierPath* bezierPath2 = [UIBezierPath bezierPath];
     [bezierPath2 moveToPoint: CGPointMake(self.frame.size.width-1, 0)];
     [bezierPath2 addLineToPoint: CGPointMake(self.frame.size.width-1, self.frame.size.height)];
-    [self.tintColor setStroke];
+    [self.borderColor setStroke];
     bezierPath2.lineWidth = 1;
     [bezierPath2 stroke];
-    
-    UIBezierPath* rectanglePath = [UIBezierPath bezierPathWithRect: CGRectMake(0.5, 0, self.frame.size.width-1, self.frame.size.height)];
-    [[UIColor clearColor] setFill];
-    [rectanglePath fill];
-    [[UIColor clearColor] setStroke];
-    rectanglePath.lineWidth = 1;
-    [rectanglePath stroke];
-    
+
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
     shapeLayer.path = rectanglePath.CGPath;
     [self.layer setMask:shapeLayer];

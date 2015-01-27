@@ -108,6 +108,20 @@ float MARGIN_PERC = 0.0;
     }
 }
 
+- (void)setFillColor:(UIColor *)fillColor
+{
+    self.topBorder.fillColor = fillColor;
+    self.middleBorders.fillColor = fillColor;
+    self.bottomBorder.fillColor = fillColor;
+}
+
+- (void)setBorderColor:(UIColor *)borderColor
+{
+    self.topBorder.borderColor = borderColor;
+    self.middleBorders.borderColor = borderColor;
+    self.bottomBorder.borderColor = borderColor;
+}
+
 -(void) expand{
     if (self.expanded){
         return;
