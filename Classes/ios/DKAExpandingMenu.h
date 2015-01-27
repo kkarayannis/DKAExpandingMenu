@@ -54,8 +54,10 @@ typedef NS_ENUM(NSInteger, DKAExpandingMenuDirection){
 @protocol DKAExpandingMenuDelegate <NSObject>
 
 @optional
+-(BOOL) expandingMenuShouldExpand:(DKAExpandingMenu *)expandingMenu;
 -(void) expandingMenuWillExpand:(DKAExpandingMenu *)expandingMenu;
 -(void) expandingMenuDidExpand:(DKAExpandingMenu *)expandingMenu;
+-(BOOL) expandingMenuShouldContract:(DKAExpandingMenu *)expandingMenu;
 -(void) expandingMenuWillContract:(DKAExpandingMenu *)expandingMenu;
 -(void) expandingMenuDidContract:(DKAExpandingMenu *)expandingMenu;
 
