@@ -44,6 +44,8 @@ typedef NS_ENUM(NSInteger, DKAExpandingMenuDirection){
 @property (strong, nonatomic) UIView<DKABorderEnd>* topBorder;
 @property (strong, nonatomic) UIView<DKABorderEnd>* bottomBorder;
 @property (strong, nonatomic) UIButton* button;
+- (void)setFillColor:(UIColor *)fillColor;
+- (void)setBorderColor:(UIColor *)borderColor;
 
 -(void) expand;
 -(void) contract;

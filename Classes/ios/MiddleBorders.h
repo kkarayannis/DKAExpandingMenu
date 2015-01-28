@@ -28,4 +28,7 @@
 
 @interface MiddleBorders : UIView
 
+@property (strong, nonatomic) UIColor *fillColor;
+@property (strong, nonatomic) UIColor *borderColor;
+
 @end
