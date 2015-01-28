@@ -38,9 +38,6 @@
 		2EA23CB519387A9D00C87904 /* DKAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKAViewController.m; sourceTree = "<group>"; };
 		2EA23CB719387A9D00C87904 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2EA23CBE19387A9D00C87904 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		2EA23CC619387A9D00C87904 /* ExpandingMenuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExpandingMenuTests-Info.plist"; sourceTree = "<group>"; };
-		2EA23CC819387A9D00C87904 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2EA23CCA19387A9D00C87904 /* ExpandingMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpandingMenuTests.m; sourceTree = "<group>"; };
 		2EE3C04F193CB37C007F57E9 /* DKADirectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKADirectionTableViewController.h; sourceTree = "<group>"; };
 		2EE3C050193CB37C007F57E9 /* DKADirectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKADirectionTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				2EA23CA519387A9D00C87904 /* ExpandingMenu */,
-				2EA23CC419387A9D00C87904 /* ExpandingMenuTests */,
 				2EA23C9E19387A9D00C87904 /* Frameworks */,
 				2EA23C9D19387A9D00C87904 /* Products */,
 				199411DD3B5549C9B79DCCE4 /* Pods-ExpandingMenu.xcconfig */,
@@ -114,24 +110,6 @@
 				2EA23CA819387A9D00C87904 /* InfoPlist.strings */,
 				2EA23CAB19387A9D00C87904 /* main.m */,
 				2EA23CAD19387A9D00C87904 /* ExpandingMenu-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2EA23CC419387A9D00C87904 /* ExpandingMenuTests */ = {
-			isa = PBXGroup;
-			children = (
-				2EA23CCA19387A9D00C87904 /* ExpandingMenuTests.m */,
-				2EA23CC519387A9D00C87904 /* Supporting Files */,
-			);
-			path = ExpandingMenuTests;
-			sourceTree = "<group>";
-		};
-		2EA23CC519387A9D00C87904 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2EA23CC619387A9D00C87904 /* ExpandingMenuTests-Info.plist */,
-				2EA23CC719387A9D00C87904 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -261,14 +239,6 @@
 				2EA23CB219387A9D00C87904 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2EA23CC719387A9D00C87904 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2EA23CC819387A9D00C87904 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
