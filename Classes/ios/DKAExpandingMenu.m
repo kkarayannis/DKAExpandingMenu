@@ -151,6 +151,14 @@ float MARGIN_PERC = 0.0;
     if (self.expanded){
         return;
     }
+
+    if (self.delegate && [self.delegate respondsToSelector:@selector(expandingMenuShouldExpand:)]){
+        if (![self.delegate expandingMenuShouldExpand:self])
+        {
+            return;
+        }
+    }
+
     if (self.delegate && [self.delegate respondsToSelector:@selector(expandingMenuWillExpand:)]){
         [self.delegate expandingMenuWillExpand:self];
     }
@@ -192,6 +200,14 @@ float MARGIN_PERC = 0.0;
     if (!self.expanded){
         return;
     }
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(expandingMenuShouldContract:)]){
+        if (![self.delegate expandingMenuShouldContract:self])
+        {
+            return;
+        }
+    }
+    
     if (self.delegate && [self.delegate respondsToSelector:@selector(expandingMenuWillContract:)]){
         [self.delegate expandingMenuWillContract:self];
     }
